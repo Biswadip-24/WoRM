@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="10dp"
+    android:background="@drawable/rounded"
+    app:cardCornerRadius="20dp"
+    app:cardElevation="10dp"
+    app:cardMaxElevation="15dp"
+    tools:context=".meme_layout_activity">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/meme_back"
+        android:elevation="10dp"
+        tools:context=".meme_layout_activity">
+
+        <ImageButton
+            android:id="@+id/imageButton2"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/heart"
+            android:contentDescription="@string/content_des_like"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/downloadButton"
+            app:layout_constraintTop_toBottomOf="@+id/memeImage"
+            app:srcCompat="@drawable/heart" />
+        <!--            android:onClick="Onlike"-->
+
+
+        <ImageButton
+            android:id="@+id/imageButton3"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:background="@drawable/share"
+            android:contentDescription="@string/content_des_share"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+            app:layout_constraintEnd_toStartOf="@+id/downloadButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/imageButton2"
+            app:srcCompat="@drawable/share" />
+
+        <ImageView
+            android:id="@+id/memeImage"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/content_des_image"
+            android:scaleType="fitStart"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/meme1"
+            tools:srcCompat="@drawable/meme3"
+            tools:visibility="visible" />
+
+        <ImageButton
+            android:id="@+id/downloadButton"
+            android:layout_width="33dp"
+            android:layout_height="33dp"
+            android:background="@drawable/download"
+            android:scaleType="centerInside"
+            app:layout_constraintBottom_toBottomOf="@+id/imageButton2"
+            app:layout_constraintEnd_toStartOf="@+id/imageButton2"
+            app:layout_constraintStart_toEndOf="@+id/imageButton3"
+            app:layout_constraintTop_toTopOf="@+id/imageButton2"
+            app:srcCompat="@drawable/download" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>

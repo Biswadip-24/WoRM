@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">WoRM</string>
+    <string name="content_des_image">meme</string>
+    <string name="content_des_like">like</string>
+    <string name="content_des_share">share</string>
+    <string name="loading">Loading Memes...</string>
+
+</resources>
