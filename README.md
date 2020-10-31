@@ -1,5 +1,5 @@
 # WoRM
-WoRM - World of Random Memes
+WoRM - World of Random Memes.  
 The perfect place to find, share and download memes of all kinds.
 # Synopsis
 * You get an infinite lists of Memes...The more you swipe, more memes you get.
