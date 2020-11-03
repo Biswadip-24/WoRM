@@ -53,7 +53,8 @@ public class MainActivity extends AppCompatActivity {
             "https://www.reddit.com/r/IndianMeyMeys/.json?limit=",
             "https://www.reddit.com/r/bollywoodmemes/.json?limit=",
             "https://www.reddit.com/r/AmongUsMemes/.json?limit=",
-            "https://www.reddit.com/r/indiameme/.json?limit="
+            "https://www.reddit.com/r/indiameme/.json?limit=",
+            "https://www.reddit.com/r/MandirGang/.json?limit="
     };
 
     private int limit_memes_per_page = 60;
